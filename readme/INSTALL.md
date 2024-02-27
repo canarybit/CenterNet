@@ -75,7 +75,7 @@ After install Anaconda:
     git clone https://github.com/CharlesShang/DCNv2
     cd DCNv2
     ./make.sh
-    
+    ~~~ 
     
     
 6. [Optional, only required if you are using extremenet or multi-scale testing] Compile NMS if your want to use multi-scale testing or test ExtremeNet.
