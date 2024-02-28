@@ -231,12 +231,12 @@ class Debugger(object):
           self.plt.imshow(cv2.cvtColor(v, cv2.COLOR_BGR2RGB))
         else:
           self.plt.imshow(v)
-      self.plt.show()
+      self.plt.show()	
 
   def save_img(self, imgId='default', path='./cache/debug/'):
     cv2.imwrite(path + '{}.png'.format(imgId), self.imgs[imgId])
     
-  def save_all_imgs(self, path='./cache/debug/', prefix='', genID=False):
+  def save_all_imgs(self, path='./results/', prefix='', genID=False):
     if genID:
       try:
         idx = int(np.loadtxt(path + '/id.txt'))

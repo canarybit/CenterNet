@@ -33,10 +33,6 @@ RUN pip install -r requirements.txt
 RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
 
 
-# Run the demo command
-#CMD ["nvcc", "-V"]
-#CMD ["nvidia-smi"]
-#CMD ["python", "src/demo.py", "ctdet", "--demo", "images", "--load_model", "models/ctdet_coco_dla_2x.pth"]
-
 RUN chmod +x /start.sh
 CMD ["/start.sh"]
+
